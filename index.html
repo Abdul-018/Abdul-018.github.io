@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENG1 Team Assessment 1 - Group Project</title>
+    <style>
+        :root {
+            --primary: #002b49;
+            --secondary: #005a9c;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #212529;
+            --border: #dee2e6;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .quick-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #003d6b;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--secondary);
+            border: 2px solid var(--secondary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: #e9ecef;
+            color: var(--primary);
+        }
+
+        .team-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.5rem;
+            padding: 0;
+            list-style: none;
+        }
+
+        .team-list li {
+            background: #e9ecef;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ENG1 Software Engineering Project</h1>
+        <p>Team [Insert Team Number] | Assessment 1 Deliverables</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Quick Access Buttons -->
+        <div class="quick-links">
+            <a href="https://github.com/YOUR_ORGANIZATION/YOUR_REPO" class="btn" target="_blank">Source Code Repository</a>
+            <a href="artifacts/game.jar" class="btn btn-outline" download>Download Executable (.JAR)</a>
+        </div>
+
+        <!-- Project Overview -->
+        <section>
+            <h2>Project Overview</h2>
+            <p>Welcome to the public homepage for Team [Insert Team Number]. This site houses all official deliverables, architectural design evidence, project management schedules, and implementation artifacts for Assessment 1 of the ENG1 module.</p>
+            
+            <h3>Team Members</h3>
+            <ul class="team-list">
+                <li>Member Name 1</li>
+                <li>Member Name 2</li>
+                <li>Member Name 3</li>
+                <li>Member Name 4</li>
+                <li>Member Name 5</li>
+                <li>Member Name 6</li>
+            </ul>
+        </section>
+
+        <!-- Official PDF Deliverables -->
+        <section>
+            <h2>Assessment 1 PDF Deliverables</h2>
+            <p>Below are the official reports submitted for Assessment 1. All documents follow standard formatting guidelines.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Deliverable</th>
+                        <th>Document Description</th>
+                        <th>Download Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Req1.pdf</strong></td>
+                        <td>Requirements Specification & Elicitation Summary</td>
+                        <td><a href="docs/Req1.pdf" target="_blank">View PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Arch1.pdf</strong></td>
+                        <td>Architecture & System Design Justification</td>
+                        <td><a href="docs/Arch1.pdf" target="_blank">View PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plan1.pdf</strong></td>
+                        <td>Method Selection, Team Organisation & Project Plan</td>
+                        <td><a href="docs/Plan1.pdf" target="_blank">View PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Risk1.pdf</strong></td>
+                        <td>Risk Assessment Process & Initial Risk Register</td>
+                        <td><a href="docs/Risk1.pdf" target="_blank">View PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Impl1.pdf</strong></td>
+                        <td>Implementation Summary & Licensing Report</td>
+                        <td><a href="docs/Impl1.pdf" target="_blank">View PDF</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Design Process & Extended Artifacts (Overflow Content) -->
+        <section>
+            <h2>Design Process & Extended Artifacts</h2>
+            <p>Detailed evidence of our engineering process and supplementary materials referenced in the main reports:</p>
+            <ul>
+                <li>
+                    <strong>Architecture Evidence (Arch1.pdf):</strong> 
+                    <a href="evidence/crc-cards.html">CRC Cards</a> | 
+                    <a href="evidence/architectural-evolution.html">Interim Architectural Diagrams</a>
+                </li>
+                <li>
+                    <strong>Project Plan Evolution (Plan1.pdf):</strong> 
+                    <a href="evidence/weekly-plans.html">Weekly Schedule Snapshots & Gantt Charts</a>
+                </li>
+                <li>
+                    <strong>Risk Register (Risk1.pdf):</strong> 
+                    <a href="evidence/full-risk-register.html">Complete Unabridged Risk Register Table</a>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ENG1 Team [Insert Team Number] — Department of Computer Science, University of York</p>
+    </footer>
+
+</body>
+</html>
